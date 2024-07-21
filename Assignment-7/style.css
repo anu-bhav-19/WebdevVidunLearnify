@@ -1,0 +1,65 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product {
+            text-align: center;
+            width: 200px;
+            margin: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-info {
+            margin-top: 10px;
+        }
+
+        .product-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+
+        .star {
+            color: gold;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .mrp {
+            color: gray;
+            text-decoration: line-through;
+            margin-bottom: 5px;
+        }
+
+        .discount {
+            color: green;
+        }
+
+        .offer {
+            font-size: 12px;
+            color: gray;
+            margin-top: 5px;
+        }
