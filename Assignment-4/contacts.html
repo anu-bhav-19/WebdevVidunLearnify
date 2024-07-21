@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            background-color: gray;
+            color: antiquewhite;
+        }
+        h2{
+            color: antiquewhite;
+            font-size: larger;
+            text-align: center;
+            padding: 10px;
+
+            text-align: center;
+        }
+        .out{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .in{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            border-bottom: solid black 3px;
+            border-right: solid black 3px;
+            border-radius: 7px;
+        }
+        label{
+            font-size:  larger;
+        }
+        .ele{
+            margin-top: 10px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        input{
+            width: 100%;
+        }
+        .innn{
+            display: flex;
+            width: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    
+        <h2>Contact Us</h2>
+        <div class="out">
+        <div class="in">
+        <form method="get" target="_self" action="./submit.html">
+            <div class="ele"><label for="fname">First Name*</label><br></div>
+            <input
+              type="text"
+              name="fname"
+              placeholder="Please enter name"
+              required
+            /> <br>
+            <div class="ele"><label for="lname">Last Name</label> <br></div>
+            <input
+              type="text"
+              name="lname"
+              placeholder="Please enter name"
+              required
+            /> <br>
+            <div class="ele"><label for="age">Enter age*</label> <br></div>
+            <input
+              type="number"
+              name="age"
+              placeholder="Enter age"
+              required
+            /> <br>
+            <div class="ele"><label for="contact">Enter Contact</label> <br></div>
+            <input
+              type="tel"
+              name="contact"
+              placeholder="Please enter contact"
+              required
+            /> 
+            <div class="innn"><label for="male">Male</label> </div>
+            <div class="innn"><input type="radio" value="male" name="gender" /> </div>
+  
+            <div class="innn"><label for="female">Female</label> </div>
+            <div class="innn"><input type="radio" value="female" name="gender" /> </div>
+  
+            <div class="innn"><label for="other">Other</label> <br></div>
+            <div class="innn"><input type="radio" value="other" name="gender" /> </div>
+            <div class="ele"><label for="resume">Resume*</label> <br></div>
+            <input type="file" name="resume" multiple /> <br>
+            <div class="ele"><label for="country">Select Country</label> <br></div>
+            <div class="ele"><select name="country">
+              <option value="canada">Canada</option>
+              <option value="india">India</option>
+              <option value="australia">Australia</option>
+            </select> </div><br>
+            <div class="ele"><textarea rows="10" cols="20">
+            Message!
+            </textarea> </div><br>
+            <div class="ele"><button type="submit">Submit</button>
+            <button type="reset">Reset</button></div>
+        </form>
+        </div>
+        </div>
+</body>
+</html>
