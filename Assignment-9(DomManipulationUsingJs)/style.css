@@ -1,0 +1,17 @@
+    body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(34, 29, 29);
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        .btns{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        
