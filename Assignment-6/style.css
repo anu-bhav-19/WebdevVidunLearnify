@@ -1,0 +1,81 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 700px;
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-group {
+    width: 40%;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+.form-groupp {
+    width: 86%;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+.form-grouppp {
+    width: 86%;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #ff3399; /* Hot pink color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 30px ;
+    display: block;
+}
+textarea{
+    height: 70px;
+}
