@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> touchscreen Data-Driven App</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" ></script>
+
+    <script src="./js/scale_site.js"></script>
+    <script src="./js/main.js" defer></script>
+    
+</head>
+
+<body>
+    <main>
+        <button id="back-btn">&lsaquo;</button>
+
+        <img id="map" src="img/map.jpg"/>
+
+        <section id="screen1">
+
+            <img id="frame1" src="img/paper1.png" class="frame"/>
+            <img id="frame2" src="img/paper2.png" class="frame"/>
+            <img id="frame3" src="img/paper3.png" class="frame"/>
+            <img id="frame4" src="img/paper4.png" class="frame"/>
+            <img id="frame5" src="img/paper5.png" class="frame"/>
+            <img id="frame6" src="img/paper6.png" class="frame"/>
+            <img id="frame7" src="img/paper7.png" class="frame"/>
+            <img id="frame8" src="img/paper8.png" class="frame"/>
+
+
+            <img id="bird-bg" src="./img/bird_bg.png" style=" left: 990px; top: 245px; width: 480px;"/>
+
+        <img id="frame9" src="img/paper9.png" class="frame"/>
+
+        <img id="title-txt" src="img/title_txt.png" style="left: 758px; top: 222px;"/>
+
+        <div class="intro-container">
+
+			<div class="history-txt intro">The Ontario Parks system stretches over 125 years. It began in 1893 with the creation of Algonquin Provincial Park. 
+            In 1954 the management and creation of provincial parks came under the Department of Lands and Forests.There are now 330 provincial parks comprising 8% of Ontario's landmass which is an area larger (over 82,000 km2) than the Provinces of Nova Scotia and PEI combined.
+
+			</div>
+			<div class="learn-more-txt intro" > LEARN MORE ABOUT:</div>
+			<button class="to-screen-btn intro" data-screen="2"> 
+				<div>Ontario Provincial Parks History and Organization</div>
+				<div>&rsaquo;</div>
+
+				<button class="to-screen-btn intro" data-screen="3"> 
+					<div>Visitor Information, Park Activities and Classifications</div>
+					<div>&rsaquo;</div>
+					
+					<button class="to-screen-btn intro" data-screen="4"> 
+						<div>North America's Boreal Forest Songbird Nursery</div>
+						<div>&rsaquo;</div>
+			</button>
+        </div>
+
+        <img id="bird" class="click-through" src="./img/bird.png" style="left: 990px; top: 245px; width: 480px;"/>
+
+        <img id="trillium" class="click-through" src="./img/trillium.png" style="left: 600px; top: 695px; width: 270px;"/>
+
+        </section>
+
+        <button id="start-btn"> TAP ANYWHERE TO START
+        </button>
+		
+		<section id="screen2" class="screen">
+            <h1 class="page-title">Ontario Provincial Parks <br> History and Organization</h1>
+            <img src="img/history/map-marker.png" alt="map marker" class="map-marker algonquin">
+            <div class="history-content algonquin-content">
+                <h2>Bruce Peninsula National Park</h2>
+                <p>Bruce Peninsula National Park, established in 1987, is a stunning natural area in Ontario that showcases rugged cliffs, clear turquoise waters, and diverse ecosystems. This park is part of the Niagara Escarpment and serves as a critical habitat for many species, while also offering breathtaking views of the Great Lakes.</p>
+            </div>
+            <img src="img/history/map-marker.png" alt="map marker" class="map-marker quetico">
+            <div class="history-content quetico-content">
+                <h2>Kejimkujik National Park</h2>
+                <p>Kejimkujik National Park in Nova Scotia is a beautiful park known for its rich Mi'kmaq history and extensive network of lakes and rivers, making it an ideal spot for canoeing, hiking, and camping. The park features ancient petroglyphs and offers visitors a glimpse into the cultural heritage of the Indigenous peoples of the region.</p>
+            </div>
+            <img src="img/history/map-marker.png" alt="map marker" class="map-marker long-point">
+            <div class="history-content long-point-content">
+                <h2>Point Pelee National Park</h2>
+                <p>Point Pelee National Park is a unique coastal park located on a peninsula that juts into Lake Erie in Ontario, Canada. This park is recognized for its diverse habitats, including marshes, forests, and beaches, making it an important stopover for migratory birds and a haven for wildlife enthusiasts.</p>
+            </div>
+            <img src="img/history/map-marker.png" alt="map marker" class="map-marker lake-superior">
+            <div class="history-content lake-superior-content">
+                <h2>Fundy National Park</h2>
+                <p>Fundy National Park is renowned for having the highest tides in the world, located along the Bay of Fundy in New Brunswick. The park encompasses lush forests, dramatic cliffs, and scenic coastal views, providing numerous opportunities for hiking, camping, and observing unique tidal ecosystems</p>
+            </div>
+            <img src="img/history/map-marker.png" alt="map marker" class="map-marker rondeau">
+            <div class="history-content rondeau-content">
+    <h2>Kawartha Highlands Provincial Park</h2>
+    <p>Kawartha Highlands Provincial Park, established in 1989, is the largest park in southern Ontario after Algonquin Provincial Park. This natural environment park features a stunning array of lakes, wetlands, and forests, offering visitors a tranquil escape for activities like canoeing, hiking, and camping amidst its diverse ecosystems.</p>
+            </div>
+        </section>
+		
+        <section id="screen3" class="screen">
+            <h1 class="page-title">Visitor Information,<br>Park Activities and Classifications</h1>
+            <img src="img/classification/pointer.svg" class="pointer" alt="pointer">
+            <h3>Tap on buttons to explore</h3>
+
+            <div class="icon activity">
+                <!-- <img src="img/classification/activity.svg" alt="Activity icon"> -->
+                <button id="activity-btn" class="btn-explore">Activity</button>
+            </div>
+
+         <div class="content activity-content">
+                <div id="outdoor" class="operation-seasons">
+                    <h2>Hiking</h2>
+    <p>Explore the park's diverse landscapes on well-maintained trails ranging from easy walks to challenging hikes. Enjoy stunning vistas, waterfalls, and wildlife encounters along the way.</p>
+
+    <h2>Camping</h2>
+    <p>Immerse yourself in nature by camping under the stars. Choose from a variety of campsites, including drive-in, walk-in, and backcountry options. Enjoy campfires, stargazing, and the sounds of the wilderness.</p>
+
+</div>
+                </div>
+            </div>
+
+            <div class="icon info">
+                <!-- <img src="img/classification/info.svg" alt="Info icon"> -->
+                <button id="info-btn" class="btn-explore">Informations</button>
+
+
+            </div>
+            <div id="info-data" class="content info-content">
+                <div class="operation-seasons">
+                    <h2>Operating Seasons</h2>
+                    <p>Summer Season (May to October)</p>
+                    <p>Winter Season (November to April)</p>
+                </div>
+
+                <div class="fees">
+                    <h2>Park Fees</h2>
+                    <p>Day Use Fees : $12 to $21</p>
+                    <p>Camping Fees : $40 to $55</p>
+                </div>
+
+                <div class="safety">
+                    <h2>Safety and Regulations</h2>
+                    <p><strong>Fire Regulations:</strong> Fire bans may be in place during dry conditions. Always check for current fire regulations and use designated fire pits.</p>
+                    <p><strong>Wildlife:</strong> Parks are home to bears, moose, and other wildlife. Follow park guidelines for food storage and encounters.</p>
+                    <p><strong>Permits:</strong> Backcountry camping and fishing require permits, which can be obtained at park offices or online.</p>
+                    
+                </div>
+            </div>
+
+            <div class="icon classification">
+                <!-- <img src="img/classification/classification.svg" alt="Classification icon"> -->
+                <button class="btn-explore">Classification</button>
+
+
+
+            </div>
+            <div class="content classification-content">
+                <div id="classification-informations" class="classification-data">
+                    <h2>Classification of Parks</h2>
+    <p>Parks are classified into various categories based on their purpose, management, and ecological significance. These classifications help in the effective conservation and management of natural resources. Common types include national parks, which preserve large natural areas for public enjoyment and ecological integrity; state parks, which offer recreational opportunities and protect local ecosystems; and urban parks, designed to provide green spaces within city environments. Each category serves distinct functions, from preserving biodiversity to offering recreational activities, ensuring that parks meet the diverse needs of communities while safeguarding the environment.</p>
+</div>
+            </div>
+            
+        </section>
+		
+        <section id="screen4" class="screen">
+            <h1 id="section4-head" class="page-title">North America's Boreal Forest<br> Songbird Nursery</h1>
+            
+            <div class="boreal-forest-content">
+                <div id="boreal-forest-activity" class="content-box">
+                    <h2>The Great Migration</h2>
+                    <p>Every spring, billions of birds embark on an incredible journey northward to Ontario's boreal forests. These forests, protected by Ontario Provincial Parks, serve as a crucial summer home for countless songbird species.</p>
+                    <p>The long days and abundant food sources make Ontario's boreal region an ideal nursery for raising young birds.</p>
+                </div>
+
+                <div id="boreal-forest-info" class="content-box">
+                    <h2>A Thriving Ecosystem</h2>
+                    <p>Ontario's boreal forests offer a rich and diverse ecosystem that supports a wide variety of songbirds. The abundance of insects, berries, and seeds provides the perfect environment for birds to feed their growing chicks.</p>
+                    <p>Provincial parks play a crucial role in preserving these habitats, ensuring the continued success of migratory songbirds.</p>
+                </div>
+
+                <div id="boreal-forest-classification" class="content-box">
+                    <h2>Conservation Efforts</h2>
+                    <p>Ontario Provincial Parks are at the forefront of songbird conservation. By protecting large swaths of boreal forest, these parks provide safe breeding grounds for millions of birds each year.</p>
+                    <p>Ongoing research and monitoring programs help park managers understand and protect the needs of these important migratory species.</p>
+                </div>
+            </div>
+        </section>
+
+
+    
+    </main>
+
+</body>
+
+</html>
